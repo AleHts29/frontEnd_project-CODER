@@ -1,6 +1,9 @@
 body {
   font-size: 1.2rem; }
 
+#non-underline-link {
+  text-decoration: none !important; }
+
 .fondo-nav {
   background-color: #13151d !important; }
 
@@ -67,7 +70,7 @@ body {
   padding: 20px; }
 
 #footer {
-  background-color: rgb(89, 89, 89); }
+  background-color: #13151d; }
 
 /* ICONOS */
 a .fab {
@@ -94,3 +97,30 @@ a .fab {
 
 .bg-4 {
   background: #d8d4ff; }
+
+/* Estilos de Materialize */
+.carousel {
+  min-height: 880px; }
+
+.carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  /* background: #000; */
+  width: 470px;
+  height: 680px; }
+
+.carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px; }
+
+.carousel .indicators .indicator-item {
+  background: #6f93bf; }
