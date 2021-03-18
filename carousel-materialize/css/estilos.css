@@ -13,8 +13,10 @@ body {
 
 /* Estilos de Materialize */
 .carousel{
-    min-height: 800px;
-    /* border: black solid; */
+    /* min-height: 800px; */
+    /* border: rgb(193, 19, 19) solid; */
+    width: auto;
+    height: 100vh;
 }
 
 .carousel .carousel-item{
@@ -23,19 +25,29 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
+    /* border: black solid; */
+    
     width: 470px;
     height: 680px;
+    /* width: 40vh; */
+    /* height: 70vh; */
 }
 
 .carousel .carousel-item img{
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
+
+     width: auto;
+    height: auto;
+    
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     border-radius: 15px;
+    
+    /* border: rgb(48, 117, 191) solid; */
 }
 
 .carousel .indicators .indicator-item{

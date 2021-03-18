@@ -47,7 +47,7 @@ h2 {
 /* PRODUCTOS */
 .card-body h3 {
   padding-top: 20px;
-  border-top: solid #9FB8AD; }
+  border-top: solid #4e4d5c77; }
 
 /* Efecto Cards*/
 .container .card {
@@ -66,12 +66,40 @@ h2 {
   font-size: 17px;
   color: #cbcbcb; }
 
+.lead {
+  color: #4e4d5cf5; }
+
 .star {
   color: #fbc02d; }
 
 .cost span {
-  color: red;
-  font-weight: bold; }
+  color: #586F7C;
+  font-weight: bold;
+  font-size: 20px; }
+
+.btn-violet {
+  background: #B47BF8; }
+
+.btn-violet:hover {
+  background: #883BD5; }
+
+.btn-pink {
+  background: #F95789; }
+
+.btn-pink:hover {
+  background: #DA4167; }
+
+.btn-black {
+  background: #264653; }
+
+.btn-black:hover {
+  background: #212529; }
+
+.btn-cyan {
+  background: #3DCCC7; }
+
+.btn-cyan:hover {
+  background: #0E9594; }
 
 /* BANNER OPINION */
 .article {
