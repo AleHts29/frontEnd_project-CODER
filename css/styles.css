@@ -1,7 +1,15 @@
 body {
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
-#non-underline-link {
+h1 {
+  font-size: 38px;
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+h2 {
+  font-size: 38px;
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+.non-underline-link {
   text-decoration: none !important; }
 
 .fondo-nav {
@@ -35,6 +43,34 @@ body {
 
 #bannerOpinion {
   background: #5454e6; }
+
+/* PRODUCTOS */
+.card-body h3 {
+  padding-top: 20px;
+  border-top: solid #9FB8AD; }
+
+/* Efecto Cards*/
+.container .card {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all .3s; }
+
+.container .card:hover {
+  transform: translateY(-15px);
+  transition: transform .3s;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5); }
+
+.card-text {
+  font-size: 17px;
+  color: #cbcbcb; }
+
+.star {
+  color: #fbc02d; }
+
+.cost span {
+  font-weight: bold; }
 
 /* BANNER OPINION */
 .article {
@@ -70,7 +106,7 @@ body {
   padding: 20px; }
 
 #footer {
-  background-color: #13151d; }
+  background-color: #333533; }
 
 /* ICONOS */
 a .fab {
@@ -98,29 +134,11 @@ a .fab {
 .bg-4 {
   background: #d8d4ff; }
 
-/* Estilos de Materialize */
-.carousel {
-  min-height: 880px; }
-
-.carousel .carousel-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  /* background: #000; */
-  width: 470px;
-  height: 680px; }
-
-.carousel .carousel-item img {
+/* div Slider Materialize -con iframe-  */
+.tamanio {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 15px; }
+  height: 70vh; }
 
-.carousel .indicators .indicator-item {
-  background: #6f93bf; }
+.fondoSlider {
+  background: #363A47;
+  margin-top: -50px; }
