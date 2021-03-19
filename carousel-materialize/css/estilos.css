@@ -11,45 +11,47 @@ body {
 }
 
 
-/* Estilos de Materialize */
-.carousel{
-    /* min-height: 800px; */
-    /* border: rgb(193, 19, 19) solid; */
-    width: auto;
-    height: 100vh;
-}
-
-.carousel .carousel-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    /* border: black solid; */
-    
-    width: 470px;
-    height: 680px;
-    /* width: 40vh; */
-    /* height: 70vh; */
-}
-
-.carousel .carousel-item img{
-    /* width: 100%; */
-    /* height: 100%; */
-
-     width: auto;
-    height: auto;
-    
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 15px;
-    
-    /* border: rgb(48, 117, 191) solid; */
-}
-
 .carousel .indicators .indicator-item{
     background: rgb(111, 147, 191);
 }
+
+
+/* USANDO MEDIA QUERIES */
+/* Resolucion mayor a 501px */
+@media screen and (min-width:575px){
+
+    /* Estilos de Materialize */
+    .carousel{
+        /* width: 100%; */
+        /* min-height: 70vh; */
+        min-height: 800px;
+         /* background: #000; */
+    }
+    
+    .carousel .carousel-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        /* background: #000; */
+        width: 470px;
+        height: 680px;
+    }
+    
+    .carousel .carousel-item img{
+        /* width: 100%; */
+        /* height: 100%; */
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        z-index: -1;
+        border-radius: 15px;
+    }
+
+
+
+
+}
+
