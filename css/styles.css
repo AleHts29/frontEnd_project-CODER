@@ -58,13 +58,19 @@ h2 {
   transition: all .3s; }
 
 .container .card:hover {
+  background: #dee2e6a1;
+  border-radius: 20px;
   transform: translateY(-15px);
   transition: transform .3s;
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5); }
+  .container .card:hover .card-body h3 {
+    border-top: solid white; }
+  .container .card:hover .card-text {
+    color: #4e4d5cf5; }
 
 .card-text {
   font-size: 17px;
-  color: #cbcbcb; }
+  color: #aeaeae; }
 
 .lead {
   color: #4e4d5cf5; }
