@@ -15,7 +15,6 @@ h2 {
 .fondo-nav {
   background-color: #13151d !important; }
 
-/* Pruebas menu */
 #inicio {
   background: url("../Multimedia/Portadas/group-of-people-at-sound-mixer-station.jpg");
   background-repeat: no-repeat;
@@ -25,10 +24,8 @@ h2 {
 /* Jumbotron Responsive -Mendia Queries- */
 .jumbotron {
   width: 100%;
-  height: 60vw;
   background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding-top: 20vw; }
+  color: white; }
 
 @media screen and (max-width: 539px) {
   .display-4 {
@@ -47,12 +44,12 @@ h2 {
     height: 80vw; } }
 
 @media screen and (min-width: 992px) {
-  .display-4 {
-    font-size: 34px; }
   .jumbotron {
-    padding-top: 30vw;
-    font-size: 14px;
-    height: 50vw; } }
+    width: 100%;
+    height: 50vw; }
+  .jumBox {
+    width: 100%;
+    height: 40vw; } }
 
 .jumbotron-course {
   width: 100%;
