@@ -1,23 +1,58 @@
 body {
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
-#non-underline-link {
+h1 {
+  font-size: 38px;
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+h2 {
+  font-size: 38px;
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif; }
+
+.non-underline-link {
   text-decoration: none !important; }
 
 .fondo-nav {
   background-color: #13151d !important; }
 
+/* Pruebas menu */
 #inicio {
   background: url("../Multimedia/Portadas/group-of-people-at-sound-mixer-station.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  z-index: -1; }
 
+/* Jumbotron Responsive -Mendia Queries- */
 .jumbotron {
   width: 100%;
-  height: 80%;
+  height: 60vw;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding-top: 400px; }
+  padding-top: 20vw; }
+
+@media screen and (max-width: 539px) {
+  .display-4 {
+    font-size: 30px; }
+  .jumbotron {
+    padding-top: 5vw;
+    font-size: 15px;
+    height: 80vw; } }
+
+@media (min-width: 540px) and (max-width: 991px) {
+  .display-4 {
+    font-size: 34px; }
+  .jumbotron {
+    padding-top: 40vw;
+    font-size: 14px;
+    height: 80vw; } }
+
+@media screen and (min-width: 992px) {
+  .display-4 {
+    font-size: 34px; }
+  .jumbotron {
+    padding-top: 30vw;
+    font-size: 14px;
+    height: 50vw; } }
 
 .jumbotron-course {
   width: 100%;
@@ -25,6 +60,70 @@ body {
   background: rgba(0, 0, 0, 0.5);
   /* color: white; */
   /* padding-top: 400px; */ }
+
+/* PRODUCTOS */
+.card-body h3 {
+  padding-top: 20px;
+  border-top: solid #4e4d5c77; }
+
+/* Efecto Cards*/
+.container .card {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all .3s; }
+
+.container .card:hover {
+  background: #dee2e6a1;
+  border-radius: 20px;
+  transform: translateY(-15px);
+  transition: transform .3s;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5); }
+  .container .card:hover .card-body h3 {
+    border-top: solid white; }
+  .container .card:hover .card-text {
+    color: #4e4d5cf5; }
+
+.card-text {
+  font-size: 17px;
+  color: #aeaeae; }
+
+.lead {
+  color: #4e4d5cf5; }
+
+.star {
+  color: #fbc02d; }
+
+.cost span {
+  color: #586F7C;
+  font-weight: bold;
+  font-size: 20px; }
+
+/* Efecto Botones cards */
+.btn-violet {
+  background: #B47BF8; }
+
+.btn-violet:hover {
+  background: #883BD5; }
+
+.btn-pink {
+  background: #F95789; }
+
+.btn-pink:hover {
+  background: #DA4167; }
+
+.btn-black {
+  background: #264653; }
+
+.btn-black:hover {
+  background: #212529; }
+
+.btn-cyan {
+  background: #3DCCC7; }
+
+.btn-cyan:hover {
+  background: #0E9594; }
 
 .jumbotron-blog {
   width: 100%;
@@ -70,7 +169,7 @@ body {
   padding: 20px; }
 
 #footer {
-  background-color: #2E4756; }
+  background-color: #333533; }
 
 /* ICONOS */
 a .fab {
@@ -98,29 +197,11 @@ a .fab {
 .bg-4 {
   background: #d8d4ff; }
 
-/* Estilos de Materialize */
-.carousel {
-  min-height: 880px; }
-
-.carousel .carousel-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  /* background: #000; */
-  width: 470px;
-  height: 680px; }
-
-.carousel .carousel-item img {
+/* div Slider Materialize -con iframe-  */
+.tamanio {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 15px; }
+  height: 70vh; }
 
-.carousel .indicators .indicator-item {
-  background: #6f93bf; }
+.fondoSlider {
+  background: #363A47;
+  margin-top: -50px; }
