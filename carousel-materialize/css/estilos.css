@@ -24,7 +24,7 @@ body {
     .carousel{
         /* width: 100%; */
         /* min-height: 70vh; */
-        min-height: 800px;
+        min-height: 780px;
          /* background: #000; */
     }
     
@@ -35,7 +35,7 @@ body {
         align-items: center;
         user-select: none;
         /* background: #000; */
-        width: 470px;
+        width: 480px;
         height: 680px;
     }
     
