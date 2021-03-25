@@ -168,7 +168,7 @@ h2 {
 #footer {
   background-color: #333533; }
 
-/* ICONOS */
+/* Social Media - index*/
 a .fab {
   color: white !important;
   font-size: 25px;
@@ -200,5 +200,50 @@ a .fab {
   height: 70vh; }
 
 .fondoSlider {
-  background: #363A47;
+  background: #1b2021;
   margin-top: -50px; }
+
+/*------------------------*/
+/* estilos pages NEW.html */
+/*------------------------*/
+.backgroundBody {
+  background: #fffffb; }
+
+.jumbotron-background {
+  background: #354f52; }
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Saira Condensed', sans-serif;
+  user-select: none;
+  background: rgba(13, 65, 34, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: scale(0);
+  transition: .05s ease; }
+
+.box:hover .capa {
+  transform: scale(1); }
+
+/* Cards Icons*/
+.cardColor {
+  background: #ffd166;
+  border-radius: 5px; }
+
+.iconCard-New {
+  font-size: 55px;
+  color: #354f52;
+  margin-top: 5px; }
+
+.hrr {
+  border-top: solid #81b29a; }
+
+.text-color {
+  color: #004d57; }
