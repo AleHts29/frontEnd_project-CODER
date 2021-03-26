@@ -210,7 +210,7 @@ a .fab {
   background: #fffffb; }
 
 .jumbotron-background {
-  background: #354f52; }
+  background: #247ba0; }
 
 .capa {
   position: absolute;
@@ -247,3 +247,13 @@ a .fab {
 
 .text-color {
   color: #004d57; }
+
+/*------------------------*/
+/* estilos pages NEW.html */
+/*------------------------*/
+.cardB {
+  border: none;
+  background: none; }
+
+.jumbotron-background-skills {
+  background: #e5e6e4; }

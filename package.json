@@ -1,17 +1,26 @@
 {
   "name": "proyecto_btrap_coder",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --include-path scss scss/sassStyles.scss css/styles.css", 
-    "watch-css":"nodemon -e scss -x \"npm run build-css\""  
+    "build-css": "node-sass --include-path scss scss/sassStyles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleHts29/frontEnd_projects.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AleHts29/frontEnd_projects/issues"
+  },
+  "homepage": "https://github.com/AleHts29/frontEnd_projects#readme",
+  "description": ""
 }
