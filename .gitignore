@@ -3,7 +3,7 @@ node_modules/
 jspm_packages/
 
 #others
-
+package-lock.json
 Icon*
 #SCSS/
 logs git/
