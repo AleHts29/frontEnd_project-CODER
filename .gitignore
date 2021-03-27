@@ -1,15 +1,15 @@
 # Dependency directories
-#node_modules/
-#jspm_packages/
+node_modules/
+jspm_packages/
 
 #others
 Icon*
-#SCSS/
+SCSS/
 logs git/
 
 
 
-# Optional npm cache directory
-#.npm
+#Optional npm cache directory
+.npm
 
 
