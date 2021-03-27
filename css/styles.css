@@ -21,6 +21,12 @@ h2 {
   background-size: cover;
   z-index: -1; }
 
+#pageFree {
+  background: url("../Multimedia/Portadas-Optimizadas/studio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; }
+
 /* Jumbotron Responsive -Mendia Queries- */
 .jumbotron {
   width: 100%;
@@ -249,7 +255,7 @@ a .fab {
   color: #004d57; }
 
 /*------------------------*/
-/* estilos pages NEW.html */
+/* estilos pages Courses.html */
 /*------------------------*/
 .cardB {
   border: none;
