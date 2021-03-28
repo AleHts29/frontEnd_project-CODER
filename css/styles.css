@@ -263,3 +263,80 @@ a .fab {
 
 .jumbotron-background-skills {
   background: #e5e6e4; }
+
+/*------------------------*/
+/* estilos locales pages free.html */
+/*------------------------*/
+.hover-Cards {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .4s; }
+
+.hover-Cards h4 {
+  position: absolute;
+  font-family: 'Saira Condensed', sans-serif;
+  user-select: none;
+  color: white;
+  border: 2px solid white;
+  background: black;
+  padding: 2px;
+  z-index: 2;
+  transform: scale(0);
+  transition: all 0.4s cubic-bezier(1, 0, 0, 1); }
+
+.hover-Cards:hover h4 {
+  transform: scale(1); }
+
+.hover-Cards img {
+  transition: all .4s; }
+
+.hover-Cards:hover img {
+  transform: rotate(10deg) scale(1.5); }
+
+.hover-Cards:before,
+.hover-Cards:after {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border: 2px solid white;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+  z-index: 1; }
+
+.hover-Cards:before {
+  transform: rotate(45deg) translateY(-150%) translateX(-30%); }
+
+.hover-Cards:after {
+  transform: rotate(45deg) translateY(150%) translateX(-10%); }
+
+.hover-Cards:hover:before {
+  transform: rotate(45deg) translateY(-43%) translateX(-30%); }
+
+.hover-Cards:hover:after {
+  transform: rotate(45deg) translateY(59%) translateX(-10%); }
+
+.free-Stuff .btn {
+  border-radius: 20px;
+  background: black; }
+
+.follow {
+  background: black; }
+
+.follow p {
+  color: gray;
+  font-size: 16px; }
+
+.follow .btn {
+  border-radius: 20px; }
