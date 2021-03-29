@@ -16,10 +16,14 @@ body{
 }
 
 
-
+/* Saca bubrayado links*/
 .non-underline-link{
     text-decoration: none !important;
+    color: #7fc8f8 ;
  }
+.non-underline-link:hover{
+    color: #5aa9e6;
+}
 
 .fondo-nav{
    background-color: #13151d !important;
@@ -65,6 +69,9 @@ body{
         font-size: 15px ;
         height: 80vw;
     }
+    .navbar h1{
+        font-size: 20px;
+    } 
 }
 
 @media (min-width:540px ) and (max-width:991px ){
@@ -111,6 +118,11 @@ body{
 }
 
 
+/* Cards */
+.cardB{
+    border: none;
+    background: none;
+}
 
 /* Efecto Cards*/
 .container .cardFx{
@@ -273,15 +285,6 @@ a .fab{
 
 
 
-/* BLOG */
-#slider2{
-    background: url("../Multimedia/Portadas/jason-rosewell-ASKeuOZqhYU-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* height: 800px; */
-}
-
 
 // Uso for aplicado en el index en Services & Products
 @for $i from 1 through 4{
@@ -304,7 +307,7 @@ a .fab{
 
 
 /*------------------------*/
-/* estilos pages NEW.html */
+/* estilos locales pages NEW.html */
 /*------------------------*/
 
 .backgroundBody{
@@ -312,9 +315,30 @@ a .fab{
 }
 
 .jumbotron-background{
-    background: #247ba0;
+    background: #a9def9;
 }
 
+
+.bg-slider{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bg-slider:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.carousel h2{
+    color: #a9def9;
+}
 
 .capa{
     position: absolute;
@@ -340,7 +364,7 @@ a .fab{
 
 /* Cards Icons*/
 .cardColor{
-    background: #ffd166;
+    background: white;
     border-radius: 5px;
 }
 .iconCard-New{
@@ -360,12 +384,12 @@ a .fab{
 
 
 /*------------------------*/
-/* estilos pages Courses.html */
+/* estilos locales pages Courses.html */
 /*------------------------*/
-.cardB{
-    border: none;
-    background: none;
+.bg-Courses-int{
+    background: #ede7b1;
 }
+
 
 .jumbotron-background-skills{
     background: #e5e6e4;
@@ -429,17 +453,17 @@ a .fab{
 }
 .hover-Cards:before{
     
-    transform: rotate(45deg) translateY(-150%) translateX(-30%);
+    transform: rotate(45deg) translateY(-150%) translateX(-10%);
 }
 .hover-Cards:after{
     
     transform: rotate(45deg) translateY(150%) translateX(-10%);
 }
 .hover-Cards:hover:before{
-    transform: rotate(45deg) translateY(-43%) translateX(-30%);
+    transform: rotate(45deg) translateY(-36%) translateX(-10%);
 }
 .hover-Cards:hover:after{
-    transform: rotate(45deg) translateY(59%) translateX(-10%);
+    transform: rotate(45deg) translateY(65%) translateX(-10%);
 }
 
 
@@ -458,7 +482,27 @@ a .fab{
 }
 .follow .btn{
     border-radius: 20px;
+   
 }
 
 
 
+/*------------------------*/
+/* estilos locales pages blog.html */
+/*------------------------*/
+#bannerBlog{
+    background: url("../Multimedia/Portadas/jason-rosewell-ASKeuOZqhYU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 800px; */
+}
+.boder-danger{
+    border: none !important;
+}
+.div-text-blog p{
+    font-size: 17px;
+}
+.div-text-blog .btn{
+    background: #ffe45e;
+}
