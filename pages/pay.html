@@ -23,51 +23,129 @@
   </head>
 <body>
 
-    <div class="container">
-	<a href="../index.html"><h1>HTs - Music Live</h1></a>
+    <div class="container bg-Pay p-5 col-sm-12">
+	<a href="../index.html" class="non-underline-link"><h1>HTs - Music Live</h1></a>
     <h3>Contac information</h3>
     <form action=""> <!--el action es para interactuar con el backend.. ejem: PHP etc-->
         <fieldset>
-            <legend>Contac information</legend>
-            <input type="Email" name= "Email" class="form-control" placeholder="Email"/><br><br> 
-            <input type="checkbox" name="acepta" value="1"><label for="acepta">Keep me up to data on news and exclusive offers</label>  
-        </fieldset><br>
+            <div class="container col-6 my-3 ">
+                <legend>Contac information</legend>
+                <input type="Email" name= "Email" class="form-control" placeholder="Email"/> 
+                <input type="checkbox" name="acepta" value="1"><label for="acepta">Keep me up to data on news and exclusive offers</label>
+            </div>  
+        </fieldset>
         
         <fieldset>
+            
+            <div class="container col-6 my-3 ">
             <legend>Billing address </legend>
-            <input type="text" name="first_name" class="form-control my-4"  placeholder="First name (optional)"/>
-            <input type="text" name="last_name" class="form-control my-4" placeholder="Last name"><br><br>
-            <input type="text" name="address" class="form-control my-4" placeholder="Address"><br><br>
-            <input type="postal-code" name="postal_code" class="form-control my-4" placeholder="Postal code">
-            <input type="text" name="city" class="form-control my-4" placeholder="City"><br><br>
-            <select name="coutry" class="form-control my-4" placeholder="Coutry">
-                <option value="">Country</option>
-                <option disabled="">-------</option>
-                <option value="DE">Alemania</option>
-                <option value="ARG">Agentina</option>
-                <option value="AU">Australia</option>
-                <option value="BO">Bolivia</option>
-                <option value="BRA">Brasil</option>
-                <option value="CHI">Chile</option>
-                <option value="CO">Colombia</option>
-                <option value="ECU">Ecuador</option>
-                <option value="ES">España</option>
-                <option value="US">Estados Unidos</option>
-                <option value="MEX">Mexico</option>
-                <option value="NZ">Nueva Zelanda</option>
-                <option value="PE">Peru</option>
-                <option value="UK">Reino Unido</option>
-                <option value="CH">Suiza</option>
-                <option value="UY">Uruguay</option>
-                <option value="CHI">Chile</option>
-            </select><br>
-        </fieldset><br><br>
-       
-            <input type="submit" class="btn btn-light my-4" value="Continue to payment">
-            <input type="reset" class="btn btn-light my-4" value="Reset">
-            <input type="button" class="btn btn-light my-4" value="Para Js"> <!--este se aplicara a JS-->
-    </form> 
+                <input type="text" name="first_name" class="form-control my-4"  placeholder="First name (optional)"/>
+                <input type="text" name="last_name" class="form-control my-4" placeholder="Last name">
+                <input type="text" name="address" class="form-control my-4" placeholder="Address">
+                <input type="postal-code" name="postal_code" class="form-control my-4" placeholder="Postal code">
+                <input type="text" name="city" class="form-control my-4" placeholder="City">
+                <select name="coutry" class="form-control my-4" placeholder="Coutry">
+                    <option value="">Country</option>
+                    <option disabled="">-------</option>
+                    <option value="DE">Alemania</option>
+                    <option value="ARG">Agentina</option>
+                    <option value="AU">Australia</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BRA">Brasil</option>
+                    <option value="CHI">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="ECU">Ecuador</option>
+                    <option value="ES">España</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="MEX">Mexico</option>
+                    <option value="NZ">Nueva Zelanda</option>
+                    <option value="PE">Peru</option>
+                    <option value="UK">Reino Unido</option>
+                    <option value="CH">Suiza</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="CHI">Chile</option>
+                </select>
 
+                <div class="container mt-5 row justify-content-center">
+                    <input type="submit" class="btn btn-light  m-4" value="Continue to payment">
+                    <input type="reset" class="btn btn-light m-4" value="Reset">
+                </div>  
+                </div>
+                
+        </fieldset><br><br>
+          
+    </form> 
 </div>
+
+
+<!-- Footer -->
+<footer>
+    <section id="footer">
+        <div class="container py-3">
+            <div class="row mt-5">
+                <div  class="col-sm-12 col-md-4 text-white">
+                    <h3 class="mt-5">HTs - Live Music</h3>
+                    <hr class="bg-white">
+                    <p class="mt-5">Musical modes and their characteristics or emotions help us set certain moods for our tracks. In modern electronic music, this can be extremely helpful to create a very specific vibe in your tracks. Modes can also help you add an unexpected flair to your melody and songwriting.</p>
+                    <p>HTs - Music Live &copy;2021 </p>
+                </div>
+                
+                <div  class="col-sm-12 col-md-4 text-center text-white">
+                    <h3 class="mt-5">Contact Us</h3>
+                    <p class="mt-5">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Buenos Aires - Argentina
+                        <br><br>
+                        <i class="fas fa-phone"></i>
+                        +54 9 11 23234444
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-4 subscribe text-white">
+                    <h3 class="mt-5">Subscribe</h3>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="email">
+                        </div>
+
+                        <button type="submit" class="btn btn-light">Subscribe</button>
+                    </form>
+
+                    
+                    <ul class="mt-5 list-unstyled list-inline">
+                        <h5>Follow Us</h5>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f "></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
 </body>
 </html>
