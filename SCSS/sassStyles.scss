@@ -38,23 +38,6 @@ body{
     //background: none !important;
 }
 
-#inicio-Home{
-    background: url("../Multimedia/Portadas/group-of-people-at-sound-mixer-station.jpg");
-    //height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-
-#pageFree{
-    background: url("../Multimedia/Portadas-Optimizadas/studio.png");
-    //height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
 
 
 /* Jumbotron Responsive -Mendia Queries- */
@@ -65,7 +48,6 @@ body{
     color: white;
     //padding-top: 40vw;
 }
-
 
 @media screen and (max-width:539px){
     
@@ -108,14 +90,10 @@ body{
 }
 
 
-
-
 .jumbotron-course{
     width: $widthJumbotron;
     height: 80%;
     background: $mascBlack;
-    /* color: white; */
-    /* padding-top: 400px; */
 }
 
 
@@ -208,27 +186,84 @@ body{
 }
 
 
+/* Footer */
+#footer{
+    @if $colorFooter  == jet{
+        background-color: #333533 ;
+    }
+    @else if $colorFooter  == azul{
+        background-color: #2E4756;
+    }@else if $colorFooter  == verde{
+        background-color: #004d57;
+    }@else{
+        background-color: #13151d;
+    }
+}
 
-.jumbotron-blog{
-    width: $widthJumbotron;
-    height: 900px;
-    background: $mascBlack;
-    color: white;
-    /* padding-top: 400px; */
+#footer p{
+    color: #d5dfe5;
+    font-size: 17px;
+}
+.subscribe .form-control{
+    border-radius: 0 !important;
+    background: none;
+}
+.subscribe .btn{
+    border-radius: 0 !important;
+}
+
+/* Social Media */
+a .fab{
+    color: white !important;
+    font-size: 25px ;
+    margin: 5px 10px;
 }
 
 
+// Uso for aplicado en el index en Services & Products
+@for $i from 1 through 4{
+    .bg-#{$i}{
+        background: #363569*$i;
+    }
+}
+
+
+
+
+
+/*------------------------*/
+/* estilos locales pages index.html */
+/*------------------------*/
+#inicio-Home{
+    background: url("../Multimedia/Portadas/group-of-people-at-sound-mixer-station.jpg");
+    //height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.jumBox .btn{
+    border-radius: 20px;
+}
+
+/* div Slider Materialize -con iframe-  */
+.tamanio {
+    width: 100%;
+    height: 70vh;
+}
+
+.fondoSlider{
+    background: #1b2021;
+    margin-top: -40px;
+}
+.fondoText{
+    background: #1b2021;
+}
+
+/* BANNER OPINION */
 #bannerOpinion{
     background: rgb(84, 84, 230);
 }
-
-
-
-
-
-
-
-/* BANNER OPINION */
 .article{
     display: flex;
     flex-direction: column; 
@@ -269,78 +304,6 @@ body{
     line-height: 30px; /* espaciado del texto */
     padding: 20px;
 }
-
-
-
-
-// uso CONDICIONAL
-/* Footer */
-#footer{
-    @if $colorFooter  == jet{
-        background-color: #333533 ;
-    }
-    @else if $colorFooter  == azul{
-        background-color: #2E4756;
-    }@else if $colorFooter  == verde{
-        background-color: #004d57;
-    }@else{
-        background-color: #13151d;
-    }
-}
-
-#footer p{
-    color: #d5dfe5;
-    font-size: 17px;
-}
-.subscribe .form-control{
-    border-radius: 0 !important;
-    background: none;
-}
-.subscribe .btn{
-    border-radius: 0 !important;
-}
-
-/* Social Media */
-a .fab{
-    color: white !important;
-    font-size: 25px ;
-    margin: 5px 10px;
-}
-
-
-
-
-// Uso for aplicado en el index en Services & Products
-@for $i from 1 through 4{
-    .bg-#{$i}{
-        background: #363569*$i;
-    }
-}
-
-
-/* div Slider Materialize -con iframe-  */
-.tamanio {
-    width: 100%;
-    height: 70vh;
-}
-
-.fondoSlider{
-    background: #1b2021;
-    margin-top: -40px;
-}
-.fondoText{
-    background: #1b2021;
-}
-
-
-
-/*------------------------*/
-/* estilos locales pages index.html */
-/*------------------------*/
-.jumBox .btn{
-    border-radius: 20px;
-}
-
 
 
 
@@ -442,6 +405,14 @@ a .fab{
 /*------------------------*/
 /* estilos locales pages free.html */
 /*------------------------*/
+#pageFree{
+    background: url("../Multimedia/Portadas-Optimizadas/studio.png");
+    //height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
 .hover-Cards{
     position: relative;
     overflow: hidden;
@@ -541,6 +512,15 @@ a .fab{
     background-repeat: no-repeat;
     /* height: 800px; */
 }
+
+
+.jumbotron-blog{
+    width: $widthJumbotron;
+    height: 900px;
+    background: $mascBlack;
+    color: white;
+}
+
 .boder-danger{
     border: none !important;
 }

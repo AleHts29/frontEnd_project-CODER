@@ -18,8 +18,11 @@
    <script src="https://kit.fontawesome.com/79037b57d1.js" crossorigin="anonymous"></script>
    
    <!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
    <!-- Styles Personalizados -->
    <link rel="stylesheet" href="../css/styles.css">
@@ -77,16 +80,11 @@
 </nav>
        
     
- 
-
-
- 
-
-
+<!-- Banner inicio -->
     <section class="text-center">
         <div class="jumbotron-background py-5">
            <div class="container">
-               <h1 class="display-4 text-center text-black"><strong>Find out What´s new</strong></h1>
+               <h1 class="display-4 text-center text-black" ><strong>Find out What´s new</strong></h1>
                <p class=" text-center text-black">What are your artists up to and what are the most listened to genres today. We give you all those tips so that your music sounds professionally and you achieve that sound you want the most.  
                </p>
            </div>
@@ -125,7 +123,7 @@
                     
                     
                     <!-- Cards User happy-->
-                <div class=" row my-5 pb-5">
+                <div class=" row my-5 pb-5 wow animate__animated  animate__backInUp" data-wow-duration="2s">
                     <div class="col-sm-12 col-md-3 mt-3">
                         <div class="card cardColor">
                             <i class="card-img-top fluit fas fa-universal-access iconCard-New my-3"></i>
@@ -570,7 +568,12 @@
             });
         }
         });
-    </script>   
+    </script>  
+
+    <!-- WOW -->
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>new WOW().init();</script>
+     
 </body>
 </html>
 

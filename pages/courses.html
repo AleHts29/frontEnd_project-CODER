@@ -15,6 +15,9 @@
 
    <!-- FONT AWESOME -->
    <script src="https://kit.fontawesome.com/79037b57d1.js" crossorigin="anonymous"></script>
+
+   <!-- Animate.css -->
+   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
    
    <!-- Styles Personalizados -->
    <link rel="stylesheet" href="../css/styles.css">
@@ -89,7 +92,7 @@
                     
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-4 ">
+            <div class="col-sm-12 col-lg-4 wow animate__animated  animate__backInRight" data-wow-duration="1.5s">
                 <p>Full Start to Finish</p>
                 
                 <h3>Mixing Course</h3>
@@ -106,18 +109,21 @@
             <div class="row justify-content-between no-gutters">
 
                 <div class="col-sm-12 col-lg-4 pr-5 ">
+                    <div class="wow animate__animated  animate__backInLeft " data-wow-duration="1.5s">
                     <h3>Note chance</h3>
-                    <p>
-                        Set the probability that a note or drum hit will occur and let Live generate surprising variations to your patterns that change over time.
-                    </p>
-                    <br>
-                    <h3>Velocity chance</h3>
-                    <p>
-                        Define ranges for velocity probability for subtle, humanized variations in the dynamics of your patterns.
-                    </p>       
+                        <p>
+                            Set the probability that a note or drum hit will occur and let Live generate surprising variations to your patterns that change over time.
+                        </p>
+                    </div>
+                    <div class="wow animate__animated  animate__backInLeft" data-wow-duration="1.5s">
+                        <h3>Velocity chance</h3>
+                        <p>
+                            Define ranges for velocity probability for subtle, humanized variations in the dynamics of your patterns.
+                        </p> 
+                    </div>      
                 </div>
                 
-                <div class="col-sm-12 col-lg-8">
+                <div class="col-sm-12 col-lg-8 wow animate__animated  animate__fadeInUp" data-wow-duration="1.5s">
                         <img src="../Multimedia/Portadas-Optimizadas/screenshot-chance-tools.jpeg" alt="" class="img-fluid">   
                 </div>
                 
@@ -343,12 +349,12 @@
 
 <!-- Cards Skill -->
 <section class="jumbotron-background-skills p-5">
-<div class="col-sm-12 my-5 text-center">
+<div class="col-sm-12 my-5 text-center wow animate__animated  animate__fadeIn" data-wow-duration="4.5s">
     <h2 class="mt-5">4 KEY SKILLSETS TO FINISH YOUR MUSIC</h2>
 </div>
 <div class="container text-center">
     <div class="row justify-content-around " >
-        <div class="col-sm-6 col-md-3 ">
+        <div class="col-sm-6 col-md-3 wow animate__animated  animate__slideInDown" data-wow-duration="1.5s">
             <div class="card cardB">
                 <i class="card-img-top fluit far fa-lightbulb iconCard-New my-3"></i>                                 
                 <div class="card-body">
@@ -360,7 +366,7 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-3 ">
-            <div class="card cardB">
+            <div class="card cardB wow animate__animated  animate__slideInUp" data-wow-duration="1.5s">
                 <i class="card-img-top fluit fas fa-bars iconCard-New my-3"></i>                                 
                 <div class="card-body">
                     <h6 class="card-title">Arrange Tracks</h6> 
@@ -371,7 +377,7 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-3 ">
-            <div class="card cardB">
+            <div class="card cardB wow animate__animated  animate__fadeInLeft" data-wow-duration="1.5s">
                 <i class="card-img-top fluit fab fa-deezer iconCard-New my-3"></i>                                 
                 <div class="card-body">
                     <h6 class="card-title">Writing</h6> 
@@ -382,7 +388,7 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-3 ">
-            <div class="card cardB">
+            <div class="card cardB wow animate__animated  animate__fadeInRight" data-wow-duration="1.5s">
                 <i class="card-img-top fluit far fa-file-audio iconCard-New my-3"></i>                                 
                 <div class="card-body">
                     <h6 class="card-title">Mixing & Mastering</h6> 
@@ -713,7 +719,12 @@
             });
         }
         });
-    </script>   
+    </script>  
+    
+    <!-- WOW -->
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    
 </body>
 </html>
 
