@@ -12,6 +12,9 @@
      <!-- Materialized.css -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+     <!-- Animate.css -->
+   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- CSS Estilos -->
     <link rel="stylesheet" href="css/estilos_galeria.css">
 </head>
@@ -20,21 +23,21 @@
     <div class="container">
         <div class="row">
 
-            <div class="row galeria center-align ">
+            <div class="row galeria center-align  ">
                 <div class="col s4 m4">
-                    <div class="material-placeholder center-align">
+                    <div class="material-placeholder center-align wow animate__animated  animate__headShake" data-wow-duration="1s">
                         <img class="responsive-img  materialboxed" src="img/TEMP1.png" alt="">
                     </div>
                 </div>
 
                 <div class="col s4 m4">
-                    <div class="material-placeholder">
+                    <div class="material-placeholder wow animate__animated  animate__bounce" data-wow-duration="2.5s">
                         <img class="responsive-img materialboxed" src="img/TEMP2.png" alt="">
                     </div>
                 </div>
 
                 <div class="col s4 m4">
-                    <div class="material-placeholder">
+                    <div class="material-placeholder wow animate__animated  animate__headShake" data-wow-duration="2s">
                         <img class="responsive-img materialboxed" src="img/TEMP3.png" alt="">
                     </div>
                 </div>
@@ -68,6 +71,10 @@
 
     <!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- WOW -->
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>new WOW().init();</script>
        
     <!-- JS Main -->
     <script src="js/galeria_Lightbox.js"></script>
